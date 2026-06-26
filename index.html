@@ -1,113 +1,250 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CommunityLink</title>
 
-<link rel="stylesheet" href="style.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareerHub | Find Your Dream Job</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 
 <body>
 
-<!-- AUTH -->
-<div id="authSidebar">
+<header>
 
-    <h2>CommunityLink</h2>
+<div class="logo">
 
-    <button onclick="showSignUp()">Sign Up</button>
-    <button onclick="showSignIn()">Sign In</button>
+<i class="fa-solid fa-briefcase"></i>
 
-    <!-- SIGN UP -->
-    <div id="signupBox">
-        <input id="su_name" placeholder="Name">
-        <input id="su_email" placeholder="Email">
-        <input id="su_phone" placeholder="Phone">
-        <input id="su_password" type="password" placeholder="Password (8+ chars)">
-        <button onclick="signup()">Create Account</button>
-    </div>
-
-    <!-- SIGN IN -->
-    <div id="signinBox" style="display:none;">
-        <input id="si_email" placeholder="Email">
-        <input id="si_password" type="password" placeholder="Password">
-        <button onclick="signin()">Login</button>
-    </div>
+<span>CareerHub</span>
 
 </div>
 
-<!-- MAIN -->
-<div id="mainApp" style="display:none; margin-left:280px; padding:20px;">
+<nav>
 
-<!-- NAV -->
-<nav style="
-display:flex;
-justify-content:space-between;
-align-items:center;
-background:white;
-padding:10px 20px;
-border-radius:10px;
-box-shadow:0 2px 10px rgba(0,0,0,0.05);
-">
+<a href="#">Home</a>
 
-<h2 style="color:#2563eb;">CommunityLink</h2>
+<a href="#">Jobs</a>
 
-<button onclick="logout()">Logout</button>
+<a href="#">Companies</a>
+
+<a href="#">Services</a>
+
+<a href="#">About</a>
+
+<a href="#">Contact</a>
 
 </nav>
 
-<!-- WELCOME -->
-<h3 id="welcomeText" style="margin-top:15px;"></h3>
+<div class="buttons">
 
-<!-- SEARCH -->
-<input id="search" placeholder="Search opportunities..." style="
-width:100%;
-padding:10px;
-margin:10px 0;
-border-radius:8px;
-border:1px solid #ddd;
-">
+<a href="login.html" class="login-btn">Login</a>
 
-<!-- FILTER -->
-<div style="text-align:center; margin:10px 0;">
-
-<button onclick="filterType('all')">All</button>
-<button onclick="filterType('job')">Jobs</button>
-<button onclick="filterType('event')">Events</button>
-<button onclick="filterType('service')">Services</button>
+<a href="register.html" class="register-btn">Register</a>
 
 </div>
 
-<!-- CARDS -->
-<div id="cardsContainer"></div>
+</header>
 
-<!-- ADD SECTION -->
-<h3>Add Opportunity</h3>
+<section class="hero">
 
-<input id="title" placeholder="Title" style="width:100%; padding:10px; margin:5px 0;">
+<div class="hero-content">
 
-<select id="type" style="width:100%; padding:10px;">
-<option value="job">Job</option>
-<option value="event">Event</option>
-<option value="service">Service</option>
-</select>
+<h1>
 
-<textarea id="description" placeholder="Description" style="width:100%; padding:10px; margin:5px 0;"></textarea>
+Find Your
 
-<button onclick="addOpportunity()" style="
-width:100%;
-padding:10px;
-background:#2563eb;
-color:white;
-border:none;
-border-radius:8px;
-margin-top:10px;
-">
-Add Opportunity
+<span>Dream Job</span>
+
+Today
+
+</h1>
+
+<p>
+
+Search thousands of jobs from the world's leading companies.
+
+Build your career with CareerHub.
+
+</p>
+
+<div class="search-box">
+
+<input type="text" placeholder="Job title">
+
+<input type="text" placeholder="Location">
+
+<button>
+
+<i class="fa-solid fa-magnifying-glass"></i>
+
+Search
+
 </button>
 
 </div>
 
-<script src="script.js"></script>
+</div>
+
+<div class="hero-image">
+
+<img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=700"
+alt="">
+
+</div>
+
+</section>
+
+<section class="stats">
+
+<div class="card">
+
+<h2>12K+</h2>
+
+<p>Jobs Available</p>
+
+</div>
+
+<div class="card">
+
+<h2>850+</h2>
+
+<p>Companies</p>
+
+</div>
+
+<div class="card">
+
+<h2>40K+</h2>
+
+<p>Candidates</p>
+
+</div>
+
+<div class="card">
+
+<h2>95%</h2>
+
+<p>Success Rate</p>
+
+</div>
+
+</section>
+
+<section class="categories">
+
+<h2>Popular Categories</h2>
+
+<div class="grid">
+
+<div class="box">
+
+<i class="fa-solid fa-code"></i>
+
+<h3>Software</h3>
+
+<p>235 Jobs</p>
+
+</div>
+
+<div class="box">
+
+<i class="fa-solid fa-shield-halved"></i>
+
+<h3>Cyber Security</h3>
+
+<p>86 Jobs</p>
+
+</div>
+
+<div class="box">
+
+<i class="fa-solid fa-microchip"></i>
+
+<h3>Engineering</h3>
+
+<p>124 Jobs</p>
+
+</div>
+
+<div class="box">
+
+<i class="fa-solid fa-chart-line"></i>
+
+<h3>Marketing</h3>
+
+<p>178 Jobs</p>
+
+</div>
+
+<div class="box">
+
+<i class="fa-solid fa-laptop-code"></i>
+
+<h3>Web Development</h3>
+
+<p>154 Jobs</p>
+
+</div>
+
+<div class="box">
+
+<i class="fa-solid fa-brain"></i>
+
+<h3>AI & ML</h3>
+
+<p>62 Jobs</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="cta">
+
+<h2>
+
+Ready to Start Your Career?
+
+</h2>
+
+<p>
+
+Create your account today and apply for thousands of jobs.
+
+</p>
+
+<a href="register.html">
+
+Get Started
+
+</a>
+
+</section>
+
+<footer>
+
+<p>
+
+© 2026 CareerHub. All Rights Reserved.
+
+</p>
+
+</footer>
+
+<script src="app.js"></script>
+
 </body>
+
 </html>
