@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>CommunityLink</title>
+
 <link rel="stylesheet" href="style.css">
 </head>
 
@@ -11,11 +12,13 @@
 
 <!-- AUTH -->
 <div id="authSidebar">
+
     <h2>CommunityLink</h2>
 
     <button onclick="showSignUp()">Sign Up</button>
     <button onclick="showSignIn()">Sign In</button>
 
+    <!-- SIGN UP -->
     <div id="signupBox">
         <input id="su_name" placeholder="Name">
         <input id="su_email" placeholder="Email">
@@ -24,47 +27,84 @@
         <button onclick="signup()">Create Account</button>
     </div>
 
+    <!-- SIGN IN -->
     <div id="signinBox" style="display:none;">
         <input id="si_email" placeholder="Email">
         <input id="si_password" type="password" placeholder="Password">
         <button onclick="signin()">Login</button>
     </div>
+
 </div>
 
 <!-- MAIN -->
-<div id="mainApp" style="display:none; margin-left:260px; padding:20px;">
+<div id="mainApp" style="display:none; margin-left:280px; padding:20px;">
 
-<nav>
-    <h2>CommunityLink</h2>
-    <button onclick="logout()">Logout</button>
+<!-- NAV -->
+<nav style="
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:white;
+padding:10px 20px;
+border-radius:10px;
+box-shadow:0 2px 10px rgba(0,0,0,0.05);
+">
+
+<h2 style="color:#2563eb;">CommunityLink</h2>
+
+<button onclick="logout()">Logout</button>
+
 </nav>
 
-<h3 id="welcomeText"></h3>
+<!-- WELCOME -->
+<h3 id="welcomeText" style="margin-top:15px;"></h3>
 
-<input id="search" placeholder="Search opportunities...">
+<!-- SEARCH -->
+<input id="search" placeholder="Search opportunities..." style="
+width:100%;
+padding:10px;
+margin:10px 0;
+border-radius:8px;
+border:1px solid #ddd;
+">
 
-<div>
+<!-- FILTER -->
+<div style="text-align:center; margin:10px 0;">
+
 <button onclick="filterType('all')">All</button>
 <button onclick="filterType('job')">Jobs</button>
 <button onclick="filterType('event')">Events</button>
 <button onclick="filterType('service')">Services</button>
+
 </div>
 
+<!-- CARDS -->
 <div id="cardsContainer"></div>
 
+<!-- ADD SECTION -->
 <h3>Add Opportunity</h3>
 
-<input id="title" placeholder="Title">
+<input id="title" placeholder="Title" style="width:100%; padding:10px; margin:5px 0;">
 
-<select id="type">
+<select id="type" style="width:100%; padding:10px;">
 <option value="job">Job</option>
 <option value="event">Event</option>
 <option value="service">Service</option>
 </select>
 
-<textarea id="description" placeholder="Description"></textarea>
+<textarea id="description" placeholder="Description" style="width:100%; padding:10px; margin:5px 0;"></textarea>
 
-<button onclick="addOpportunity()">Add</button>
+<button onclick="addOpportunity()" style="
+width:100%;
+padding:10px;
+background:#2563eb;
+color:white;
+border:none;
+border-radius:8px;
+margin-top:10px;
+">
+Add Opportunity
+</button>
 
 </div>
 
