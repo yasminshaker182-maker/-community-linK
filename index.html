@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CommunityLink</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>CommunityLink</h1>
+    <p>Find jobs, events, and services in your community</p>
+
+    <input type="text" id="search" placeholder="Search opportunities...">
+</header>
+
+<section class="filters">
+    <button onclick="filterItems('all')">All</button>
+    <button onclick="filterItems('job')">Jobs</button>
+    <button onclick="filterItems('event')">Events</button>
+    <button onclick="filterItems('service')">Services</button>
+</section>
+
+<section id="cards-container"></section>
+
+<section class="form-section">
+    <h2>Add New Opportunity</h2>
+
+    <input type="text" id="title" placeholder="Title">
+
+    <select id="type">
+        <option value="job">Job</option>
+        <option value="event">Event</option>
+        <option value="service">Service</option>
+    </select>
+
+    <textarea id="description" placeholder="Description"></textarea>
+
+    <button onclick="addItem()">Add</button>
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
