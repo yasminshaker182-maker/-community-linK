@@ -1,250 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CareerHub | Find Your Dream Job</title>
-
-    <link rel="stylesheet" href="style.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
-
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CareerHub | Find Your Dream Job</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
 <header>
-
-<div class="logo">
-
-<i class="fa-solid fa-briefcase"></i>
-
-<span>CareerHub</span>
-
-</div>
-
+<div class="logo"><i class="fa-solid fa-briefcase"></i><span>CareerHub</span></div>
 <nav>
-
 <a href="#">Home</a>
-
-<a href="#">Jobs</a>
-
-<a href="#">Companies</a>
-
-<a href="#">Services</a>
-
-<a href="#">About</a>
-
-<a href="#">Contact</a>
-
+<a href="#jobs">Jobs</a>
+<a href="#companies">Companies</a>
+<a href="#categories">Categories</a>
+<a href="#contact">Contact</a>
 </nav>
-
 <div class="buttons">
-
-<a href="login.html" class="login-btn">Login</a>
-
-<a href="register.html" class="register-btn">Register</a>
-
+<a class="login-btn" href="login.html">Login</a>
+<a class="register-btn" href="register.html">Register</a>
 </div>
-
 </header>
 
 <section class="hero">
-
 <div class="hero-content">
-
-<h1>
-
-Find Your
-
-<span>Dream Job</span>
-
-Today
-
-</h1>
-
-<p>
-
-Search thousands of jobs from the world's leading companies.
-
-Build your career with CareerHub.
-
-</p>
-
+<h1>Discover Your <span>Dream Career</span></h1>
+<p>Search thousands of verified opportunities from leading companies across the Middle East.</p>
 <div class="search-box">
-
-<input type="text" placeholder="Job title">
-
-<input type="text" placeholder="Location">
-
-<button>
-
-<i class="fa-solid fa-magnifying-glass"></i>
-
-Search
-
-</button>
-
+<input id="job" placeholder="Job title">
+<input id="location" placeholder="Location">
+<button id="searchBtn"><i class="fa-solid fa-magnifying-glass"></i> Search</button>
 </div>
-
 </div>
-
 <div class="hero-image">
-
-<img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=700"
-alt="">
-
+<img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=900" alt="Team">
 </div>
-
 </section>
 
 <section class="stats">
-
-<div class="card">
-
-<h2>12K+</h2>
-
-<p>Jobs Available</p>
-
-</div>
-
-<div class="card">
-
-<h2>850+</h2>
-
-<p>Companies</p>
-
-</div>
-
-<div class="card">
-
-<h2>40K+</h2>
-
-<p>Candidates</p>
-
-</div>
-
-<div class="card">
-
-<h2>95%</h2>
-
-<p>Success Rate</p>
-
-</div>
-
+<div class="card"><h2>25K+</h2><p>Jobs</p></div>
+<div class="card"><h2>5K+</h2><p>Companies</p></div>
+<div class="card"><h2>120K+</h2><p>Candidates</p></div>
+<div class="card"><h2>96%</h2><p>Success Rate</p></div>
 </section>
 
-<section class="categories">
-
+<section id="categories" class="categories">
 <h2>Popular Categories</h2>
-
 <div class="grid">
-
-<div class="box">
-
-<i class="fa-solid fa-code"></i>
-
-<h3>Software</h3>
-
-<p>235 Jobs</p>
-
+<div class="box"><i class="fa-solid fa-shield-halved"></i><h3>Cyber Security</h3></div>
+<div class="box"><i class="fa-solid fa-code"></i><h3>Software</h3></div>
+<div class="box"><i class="fa-solid fa-microchip"></i><h3>Engineering</h3></div>
+<div class="box"><i class="fa-solid fa-brain"></i><h3>AI & ML</h3></div>
+<div class="box"><i class="fa-solid fa-chart-line"></i><h3>Marketing</h3></div>
+<div class="box"><i class="fa-solid fa-network-wired"></i><h3>Networking</h3></div>
 </div>
-
-<div class="box">
-
-<i class="fa-solid fa-shield-halved"></i>
-
-<h3>Cyber Security</h3>
-
-<p>86 Jobs</p>
-
-</div>
-
-<div class="box">
-
-<i class="fa-solid fa-microchip"></i>
-
-<h3>Engineering</h3>
-
-<p>124 Jobs</p>
-
-</div>
-
-<div class="box">
-
-<i class="fa-solid fa-chart-line"></i>
-
-<h3>Marketing</h3>
-
-<p>178 Jobs</p>
-
-</div>
-
-<div class="box">
-
-<i class="fa-solid fa-laptop-code"></i>
-
-<h3>Web Development</h3>
-
-<p>154 Jobs</p>
-
-</div>
-
-<div class="box">
-
-<i class="fa-solid fa-brain"></i>
-
-<h3>AI & ML</h3>
-
-<p>62 Jobs</p>
-
-</div>
-
-</div>
-
 </section>
 
-<section class="cta">
-
-<h2>
-
-Ready to Start Your Career?
-
-</h2>
-
-<p>
-
-Create your account today and apply for thousands of jobs.
-
-</p>
-
-<a href="register.html">
-
-Get Started
-
-</a>
-
-</section>
-
-<footer>
-
-<p>
-
-© 2026 CareerHub. All Rights Reserved.
-
-</p>
-
+<footer id="contact">
+<p>© 2026 CareerHub. All Rights Reserved.</p>
 </footer>
 
 <script src="app.js"></script>
-
 </body>
-
 </html>
