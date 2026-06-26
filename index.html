@@ -9,39 +9,65 @@
 
 <body>
 
-<header>
-    <h1>CommunityLink</h1>
-    <p>Find jobs, events, and services in your community</p>
+<!-- AUTH -->
+<div id="authSidebar">
+    <h2>CommunityLink</h2>
 
-    <input type="text" id="search" placeholder="Search opportunities...">
-</header>
+    <button onclick="showSignUp()">Sign Up</button>
+    <button onclick="showSignIn()">Sign In</button>
 
-<section class="filters">
-    <button onclick="filterItems('all')">All</button>
-    <button onclick="filterItems('job')">Jobs</button>
-    <button onclick="filterItems('event')">Events</button>
-    <button onclick="filterItems('service')">Services</button>
-</section>
+    <div id="signupBox">
+        <input id="su_name" placeholder="Name">
+        <input id="su_email" placeholder="Email">
+        <input id="su_phone" placeholder="Phone">
+        <input id="su_password" type="password" placeholder="Password (8+ chars)">
+        <button onclick="signup()">Create Account</button>
+    </div>
 
-<section id="cards-container"></section>
+    <div id="signinBox" style="display:none;">
+        <input id="si_email" placeholder="Email">
+        <input id="si_password" type="password" placeholder="Password">
+        <button onclick="signin()">Login</button>
+    </div>
+</div>
 
-<section class="form-section">
-    <h2>Add New Opportunity</h2>
+<!-- MAIN -->
+<div id="mainApp" style="display:none; margin-left:260px; padding:20px;">
 
-    <input type="text" id="title" placeholder="Title">
+<nav>
+    <h2>CommunityLink</h2>
+    <button onclick="logout()">Logout</button>
+</nav>
 
-    <select id="type">
-        <option value="job">Job</option>
-        <option value="event">Event</option>
-        <option value="service">Service</option>
-    </select>
+<h3 id="welcomeText"></h3>
 
-    <textarea id="description" placeholder="Description"></textarea>
+<input id="search" placeholder="Search opportunities...">
 
-    <button onclick="addItem()">Add</button>
-</section>
+<div>
+<button onclick="filterType('all')">All</button>
+<button onclick="filterType('job')">Jobs</button>
+<button onclick="filterType('event')">Events</button>
+<button onclick="filterType('service')">Services</button>
+</div>
+
+<div id="cardsContainer"></div>
+
+<h3>Add Opportunity</h3>
+
+<input id="title" placeholder="Title">
+
+<select id="type">
+<option value="job">Job</option>
+<option value="event">Event</option>
+<option value="service">Service</option>
+</select>
+
+<textarea id="description" placeholder="Description"></textarea>
+
+<button onclick="addOpportunity()">Add</button>
+
+</div>
 
 <script src="script.js"></script>
-
 </body>
 </html>
