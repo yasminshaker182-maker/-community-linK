@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CommunityLink - Create Account</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+body{
+margin:0;
+font-family:Poppins;
+background:#f4f6fb;
+display:flex;
+height:100vh;
+}
+
+/* LEFT SIDE */
+.left{
+flex:1;
+background:linear-gradient(135deg,#2563eb,#1e40af);
+color:white;
+padding:60px;
+display:flex;
+flex-direction:column;
+justify-content:center;
+}
+
+.left h1{
+font-size:36px;
+margin-bottom:10px;
+}
+
+.left p{
+opacity:0.9;
+line-height:1.6;
+}
+
+/* RIGHT SIDE */
+.right{
+flex:1.2;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+.form-box{
+background:white;
+padding:30px;
+width:400px;
+border-radius:12px;
+box-shadow:0 10px 30px rgba(0,0,0,0.1);
+}
+
+.form-box h2{
+margin-bottom:20px;
+}
+
+input, select{
+width:100%;
+padding:12px;
+margin:8px 0;
+border:1px solid #ddd;
+border-radius:8px;
+outline:none;
+}
+
+button{
+width:100%;
+padding:12px;
+background:#2563eb;
+color:white;
+border:none;
+border-radius:8px;
+cursor:pointer;
+font-weight:600;
+margin-top:10px;
+}
+
+button:hover{
+background:#1e40af;
+}
+
+.small{
+font-size:12px;
+color:gray;
+margin-top:10px;
+text-align:center;
+}
+
+.social{
+display:flex;
+gap:10px;
+margin-top:10px;
+}
+
+.social button{
+flex:1;
+background:white;
+color:black;
+border:1px solid #ddd;
+}
+</style>
+</head>
+
+<body>
+
+<!-- LEFT PANEL -->
+<div class="left">
+<h1>Welcome to CommunityLink</h1>
+<p>
+Find jobs, events, and services in your community.<br>
+Create your account and start exploring opportunities.
+</p>
+</div>
+
+<!-- RIGHT PANEL -->
+<div class="right">
+
+<div class="form-box">
+
+<h2>Create Account</h2>
+
+<input placeholder="Email ID">
+<input placeholder="Create Password">
+<input placeholder="Full Name">
+<input placeholder="Phone Number">
+
+<select>
+<option>Select Experience Level</option>
+<option>Fresher</option>
+<option>Experienced</option>
+</select>
+
+<input type="file">
+
+<button>Create Account</button>
+
+<div class="small">
+By continuing, you agree to Terms & Privacy Policy
+</div>
+
+<div class="social">
+<button>Google</button>
+<button>Facebook</button>
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
